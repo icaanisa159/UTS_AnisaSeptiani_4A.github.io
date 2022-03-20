@@ -114,7 +114,19 @@
               <img src="img/coba.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-lg-4 col-md-6 offset-lg-1 mt-3">
-              <form>
+              <div
+                class="alert alert-warning alert-dismissible fade show d-none my-alert"
+                role="alert"
+              >
+                <strong>Terimakasi ya!</strong> Pesan anda sudah kami terima.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <form name="jajankuy-contact-form">
                 <div class="mb-3">
                   <label for="nama" class="form-label">Nama Lengkap</label>
                   <input
@@ -122,6 +134,7 @@
                     class="form-control"
                     id="name"
                     aria-describedby="name"
+                    name="nama"
                   />
                 </div>
                 <div class="mb-3">
@@ -131,18 +144,38 @@
                     class="form-control"
                     id="email"
                     aria-describedby="email"
+                    name="email"
                   />
                 </div>
                 <div class="mb-3">
                   <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="4"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    rows="4"
+                    name="pesan"
+                  ></textarea>
                 </div>
                 <button
                   type="submit"
-                  class="btn text-black"
+                  class="btn text-black btn-kirim"
                   style="background-color: #ffeab1"
                 >
                   Kirim
+                </button>
+
+                <button
+                  class="btn text-black btn-loading d-none"
+                  type="button"
+                  style="background-color: #ffeab1"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Loading...
                 </button>
               </form>
             </div>
@@ -214,5 +247,36 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw1wnEqDBIhrUyQAem3xuVP27U-XwMWcQkqrsWsOakFXHQiWoty0fMETx2MfSWRWHxt/exec";
+      const form = document.forms["jajankuy-contact-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // Tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+
+            //reset from
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
