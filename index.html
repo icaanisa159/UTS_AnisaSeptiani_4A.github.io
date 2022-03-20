@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My CSS Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Logo Tittle Bar  -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+
+    <title>JajanKuy.com</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/icon.png"
+            alt=""
+            width="30"
+            class="d-inline-block align-text-top me-3"
+          />
+          JajanKuy.com</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="index.html" style="color: #FFEAB1">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="About.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link"  aria-current="page" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-1"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="button-primary btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Slider -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide1.png" class="d-block w-100" alt="Welcome" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide2.jpg" class="d-block w-100" alt="Mie Sate" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide3.jpg" class="d-block w-100" alt="Nasi Uduk" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide4.jpg" class="d-block w-100" alt="Pedagang Sate" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide5.jpg" class="d-block w-100" alt="Coffie" />
+      </div>
+    </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Slider -->
+
+    <!-- Tentang -->
+    <section id="jajankuy" class="jajankuy">
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-12 text-start">
+              <h2>Tentang JajanKuy.com</h2>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-lg-5 col-md-3 col-12 order-2 mt-4">
+              <p >
+                JajanKuy.com adalah website tentang seputar kuliner yang ada di
+                Indonesia. Kuliner Indonesiamerupakan salah satu masakan terlezat 
+                di dunia dengan bumbu rempah-rempah yang begitu lengkap. Ragam 
+                masakan Indonesia pun begitu banyak dan rata-rata membuatmu menelan 
+                ludah hanya dengan melihat gambar masakannya saja.
+              </p><br>
+              <a 
+                href="About.html"
+                class="btn" 
+                style="background-color: #877f7d; color: #fff;"> 
+                Lihat Selengkapnya
+              </a>
+            </div>
+            <div class="col-lg-7 col-md-3 col-12 mt-3">
+              <img
+                src="img/tentangdepan.jpg"
+                class="img-fluid"
+                alt="Cafe"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Tentang -->
+    
+    <!-- Resep Populer  -->
+    <section class="resep" id="resep">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1>Resep Populer</h1>
+            <p class="text">Yuk Coba Masak!</p>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card ">
+              <img src="img/gambar4.jpg" class="card-img-top" alt="Hot Chocolate">
+              <div class="card-body">
+                <h5 class="card-title">3-Ingredient Instant Hot Chocolate (Dairy-Free!)</h5>
+                <p class="card-text">Oleh Minimalist Baker</p>
+                <a href="https://minimalistbaker.com/3-ingredient-instant-hot-chocolate-dairy-free/" class="btn btn-outline-dark">Yuk Coba</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card ">
+              <img src="img/gambar5kedua.jpg" class="card-img-top" alt="Bananan Roll">
+              <div class="card-body">
+                <h5 class="card-title">Banana Roll Cemilan yang Nikmat, Krispi dan Manis</h5>
+                <p class="card-text">Oleh Atsarina Luthfiyyah</p>
+                <a href="https://resepkoki.id/resep/resep-banana-roll/" class="btn btn-outline-dark">Yuk Coba</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card ">
+              <img src="img/gambar6.jpg" class="card-img-top" alt="Sandwich Rendang">
+              <div class="card-body">
+                <h5 class="card-title">Sandwich Rendang kaya rempah khas Indonesia.</h5>
+                <p class="card-text">Oleh Atsarina Luthfiyyah</p>
+                <a href="https://resepkoki.id/resep/resep-sandwich-rendang/" class="btn btn-outline-dark">Yuk Coba</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card ">
+              <img src="img/gambar7.jpg" class="card-img-top" alt="Ginger Tea">
+              <div class="card-body">
+                <h5 class="card-title">How to Make Fresh Ginger Tea of health benefits</h5>
+                <p class="card-text">Oleh Minimalist Baker</p>
+                <a href="https://minimalistbaker.com/how-to-make-fresh-ginger-tea/" class="btn btn-outline-dark">Yuk Coba</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid col-12 mt-5 mx-auto">
+          <a 
+            href="Blog.html"
+            class="btn" 
+            style="background-color: #877f7d; color: #000; font-weight: bold; font-size: larger;"> 
+            >>Klik Untuk melihat lebih Banyak Resep!<<
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Resep Populer -->
+
+    <!-- Resep Populer 2 -->
+    <section class="review" id="review">
+    <div class="container-fluid py-5" style="background-color: #FFEAB1">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2>Culinary Talk</h2>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-xl-6 mb-3">
+            <div class="card">
+              <img src="img/Corndog.jpg" class="card-img-top" alt="Corndog">
+              <div class="card-body">
+               <h5 class="card-title">Corndog Mozarella</h5>
+                <p class="card-text">Corndog Mozarella Cemilan Hits dari Kore</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-xl-6 mb-3">
+          <div class="card ">
+            <div class="card-body">
+              <h2 class="card-title">Tau ga sih Cemilan Corndog Mozarella?</h2>
+              <br>
+              <p> Bagi para pecinta hiburan Korea tentunya sudah mengetahui 
+                berbagai macam makanan atau jajanan negeri gingseng tersebut, 
+                salah satunya Corndog. Corndog adalah salah satu jajanan khas 
+                Korea Selatan yang mengombinasikan sosis dengan adonan tepung 
+                tebal. Sebelum digoreng, corndog juga dilapisi tepung jagung kasar. 
+                Variasi lainnya adalah corndog dilapisi kentang goreng.
+              </p>
+              <p>
+                Corndog sekarang banyak macamnya, tak hanya isian sosis namun
+                juga keju mozarella. Lapisan luarnya tak hanya pakai tepung 
+                jagung kasar, bisa juga gunakan kentang, mie yang dihancurkan, 
+                dan tepung roti. Buat kalian yang penasaran ingin mencicipi rasanya,
+                sekarang sudah banyak di Indonesia jajanan satu ini. 
+                Namun, kalian juga bisa coba membuat sendiri di rumah lho! 
+                yuk cara bikinnya dibawah ini:
+              </p>
+              <br>
+              <a href="https://www.youtube.com/watch?v=FZB6hSsziQI" 
+                  class="btn" 
+                  style="background-color: #877f7d; color: #fff;">
+                Klik disini!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Akhir Resep Populer 2 -->
+
+    <!-- Rekomendasi Tempat Jajan -->
+    <section class="tempat" id="tempat">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-6 col-md-8">
+            <h2>Rekomendasi Tempat Jajan Favorit Seluruh Kota di Indonesia</h2>
+          </div>
+        </div>
+        <div class="row justify">
+          <div class="col-lg-8 col-md-12">
+            <p>
+              Wisata kuliner di berbagai tempat jajan yang enak, sampai tempat jajan 
+              yang melegenda harus masuk agenda wajib ketika mengunjungi berbagai 
+              daerah di Indonesia. Bukan hanya lidah yang akan dimanjakan dengan 
+              ragam cita rasa, tapi mata juga akan di hipnotis dengan pemandangan 
+              indah sebagai pelengkapnya.
+            </p>
+            <br />
+          </div>
+        </div>
+
+        <div class="row justify-content-center md-3">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1; border-style: double;">
+              <img src="img/tempat1.jpg" class="card-img-top" alt="The Flavour Bliss" />
+              <div class="card-body">
+                <h5 class="card-title">Bakso Rusuk Joss</h5>
+                <p class="card-text">Tempat Jajan Bakso Unik - Viral - Fenomenal</p>
+                <p style="font-size: 12px;">Lokasi: Sukaluyu, Kec. Telukjambe Tim., Kabupaten Karawang, Jawa Barat 41361</p>
+                <p style="font-size: 12px;"> Jam buka: 10.00 – 22.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 25 ribu – 160 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat2.jpg" class="card-img-top" alt="RM.Khas Sunda Cibiuk" />
+              <div class="card-body">
+                <h5 class="card-title">Great Dimsum Bandung</h5>
+                <p class="card-text">Tempat Jajan Dimsum Terenak</p>
+                <p style="font-size: 12px;">Lokasi: Jl. Supratman No.49, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</p>
+                <p style="font-size: 12px;"> Jam buka: 16.00 – 23.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 13 ribu - 50 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat3.jpg" class="card-img-top" alt="District Dago Bandung" />
+              <div class="card-body">
+                <h5 class="card-title">District Dago Bandung</h5>
+                <p class="card-text">Tempat Jajan berdekorasi eklektik</p>
+                <p style="font-size: 11px;">Lokasi: l. Ir. H. Juanda No.339, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135 </p>
+                <p style="font-size: 12px;"> Jam buka: 10.00 – 21.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 20 ribu – 180 ribu</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat4.jpg" class="card-img-top" alt="Follow Mie Cafe" />
+              <div class="card-body">
+                <h5 class="card-title">Follow Mie Cafe</h5>
+                <p class="card-text">Tempat Jajan Hits Di Subang Kota</p>
+                <p style="font-size: 11px;">Lokasi: Jl. Otto Iskandardinata No.38, Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat 41211</p>
+                <p style="font-size: 11px;"> Jam buka: 08.30 – 23.00 </p>
+                <p style="font-size: 11px;">  Estimasi makan : 28 ribu – 200 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat8.jpg" class="card-img-top" alt="The Flavour Bliss" />
+              <div class="card-body">
+                <h5 class="card-title">Kopi Natadamar</h5>
+                <p class="card-text" style="font-size: 13px;">Tempat ngopi dengan view yang menarik dan menenangkan.</p>
+                <p style="font-size: 12px;">Lokasi: Jl. Hutan Pinus Nganjir No.5, Sukorame, Mangunan, Dlingo, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55783</p>
+                <p style="font-size: 12px;"> Jam buka: 10.00 – 22.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 6 ribu – 18 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat6.jpg" class="card-img-top" alt="The Flavour Bliss" />
+              <div class="card-body">
+                <h5 class="card-title">Kopi Kenangan Cikampek</h5>
+                <p class="card-text">Tempat ngopi yang nyaman</p>
+                <p style="font-size: 11.3px;">Lokasi: Ruko Mall Cikampek, Ruko A07, Kios A 117-118, Jl. Jend. Ahmad Yani No.76, Dawuan Tengah, Kec. Cikampek, Kabupaten Karawang, Jawa Barat 41373</p>
+                <p style="font-size: 12px;"> Jam buka: 07.00 – 22.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 15 ribu – 90 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat7.jpg" class="card-img-top" alt="The Flavour Bliss" />
+              <div class="card-body">
+                <h5 class="card-title">Martabak Jepang Jony Jogja</h5>
+                <p class="card-text">Tempat Jajanan Unik di Yogyakarta</p>
+                <p style="font-size: 12px;">Lokasi: Jl. Tegalturi No.52, Giwangan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55163 </p>
+                <p style="font-size: 12px;"> Jam buka: 11.00 – 21.30 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 15 ribu – 25 ribu</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card bg-transparent mb-3" style="border-color: #FFEAB1;">
+              <img src="img/tempat5.png" class="card-img-top" alt="Mie Gacoan Karawang" />
+              <div class="card-body">
+                <h5 class="card-title">Mie Gacoan Karawang</h5>
+                <p class="card-text">Tempat Jajan Viral Mie Pedas Murah dan Enak </p>
+                <p style="font-size: 12px;">Lokasi: Ruko Pasar Bersih Galuh Mas, Sukaharja, East Telukjambe, Karawang Regency, West Java 41361 </p>
+                <p style="font-size: 12px;"> Jam buka: 12.00 – 17.00 </p>
+                <p style="font-size: 12px;">  Estimasi makan : 5 ribu – 15 ribu</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Rekomendasi Tempat Jajan -->
+
+    <!-- Gelombang  -->
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 1440 320">
+      <path 
+        fill="#ffeab1" 
+        fill-opacity="1" 
+        d="M0,192L40,170.7C80,149,160,107,240,117.3C320,128,400,192,480,218.7C560,245,640,235,720,192C800,149,880,75,960,64C1040,53,1120,107,1200,144C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+    </svg>
+    <!-- Akhir Gelombang -->
+    
+    <!-- Footer -->
+    <footer>
+      <p>
+        Created with <i class="bi bi-chat-right-heart-fill"></i> by
+        <a
+          href="https://www.instagram.com/anisaaaaa_15/"
+          class="text-black fw-bold"
+          >Anisa Septiani</a
+        >
+      </p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
